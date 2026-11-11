@@ -1,0 +1,157 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+}
+
+/* Encabezado Principal */
+header {
+    background-color: #1b365d;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 38px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 14px;
+    color: #cbd5e1;
+    margin-top: 5px;
+}
+
+/* Barra de Navegación */
+nav {
+    background-color: #0f172a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+/* Contenido Principal */
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+    padding: 10px;
+    border-bottom: 3px solid #1b365d;
+    color: #1e293b;
+}
+
+/* Grid de Noticias (Mínimo 3 noticias) */
+.contenedor-noticias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* Tarjeta de Noticia */
+article.noticia {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+article.noticia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+article.noticia img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+article.noticia h2 {
+    font-size: 20px;
+    color: #0f172a;
+    padding: 15px 15px 10px 15px;
+}
+
+article.noticia p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #475569;
+    padding: 0 15px 20px 15px;
+}
+
+/* Clases CSS personalizadas para cada sección */
+.destacado-inicio {
+    border-left: 5px solid #2563eb;
+}
+
+.destacado-deporte {
+    border-left: 5px solid #16a34a;
+}
+
+.destacado-farandula {
+    border-left: 5px solid #d946ef;
+}
+
+.destacado-politica {
+    border-left: 5px solid #ea580c;
+}
+
+.destacado-justicia {
+    border-left: 5px solid #dc2626;
+}
+
+/* Pie de página */
+footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
